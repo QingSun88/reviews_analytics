@@ -20,3 +20,11 @@ for d in data:    #先写for loop去读取资料，行程字串
 	if len(d)<100:
 		new.append(d)
 print('in tatol there are', len(new), 'reviews')
+
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('一共有', len(good),'提及到good' )
+print(good[0])
